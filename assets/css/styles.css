@@ -1,49 +1,61 @@
+/* Reset a la etiqueta body y todo lo que contiene, poniendo en 0 margenes, bordes y padding */
 body * {
     margin: 0;
     border: 0;
     padding: 0;
 }
+
+/* Especifico el tipo de letra (fuente), color de fondo y color de las letras, a la etiqueta body */
 body {
     font-family: 'Roleway', sans-serif;
     background: #000000;
     color: #ffffff;
 }
-footer {
+
+/* Selecciona el color de fondo que necesito para la etiqueta footer y las clases .who-icons y .cars-body */
+footer, .who-icons, .card-body{
     background-color: #1c93a9;
 }
+
+/* Indico el tamaño de la fuente según un calculo del tamaño de pantalla */
 h5{
     font-size: calc(20px + (25 - 20)*((100vw - 320px)/(1280-320)));
 }
-.logo{
+
+/* Creo la clase .logo para asignarle el tamaño de fuente que necesito, tambien se la asigno a la clase .card-title */
+.logo, .card-title{
     font-size: calc(16px + (20 - 16)*((100vw - 320px)/(1280-320)));
 }
-.card-title{
-    font-size: calc(16px + (20 - 16)*((100vw - 320px)/(1280-320)));
-}
+
+/* Le doy color transparente al navbar */
 .navbar{
     background-color: transparent !important;
 }
+
+/* Creo la clase divider, para hacer la linea de separacion de las secciones */
 .divider {
     height: 0;
     margin: 0.5rem 0;
     overflow: hidden;
     border-top: 3px solid #1c93a9;
 }
-.who-icons{
-    background-color: #1c93a9;
-}
+
+/* Modifico el tamaño de los iconos */
 .icons{
     font-size: calc(20px + (24 - 20)*((100vw - 320px)/(1280-320)));  
 }
+
+/* Las imagenes de las card tenian diferentes tamaños, su ancho se modifica por la card y aqui igualo las alturas */
 .card-img{
     height: 10rem;
 }
-.card-body{
-    background-color: #1c93a9;
-}
+
+/* Cambio el ancho la fuente para el texto de la card */
 .card-text{
     font-weight: 100 !important;
 }
+
+/* Creo la clase .footer para alinear el contenido de éste */
 .footer{
     display: flex;
     justify-content: space-around;
