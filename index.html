@@ -26,7 +26,9 @@
 <body>
   <main>
 
-    <!-- navbar -->
+    <!-- Navbar -->
+    <!-- Utilizo el componente "navbar" desde bootstrap y modifico su diseño según las necesidades requeridas, ademas utilizo clases utilitarias para generar margenes, padding, alineaciones y otros -->
+    <!-- Tambipen creo mis propias clases como "logo" para modificar propiedades especificas en mi archivo styles.css-->
     <nav class="navbar navbar-expand-lg navbar-dark py-2 fixed-top">
       <a class="navbar-brand d-flex align-items-center" href="#inicio">
         <img src="/assets/img/viajes.svg" width="30" height="30" class="d-inline-block align-top" alt="">
@@ -54,6 +56,8 @@
     </nav>
     
     <!-- Header -->
+    <!-- Especifico id para header, con esto puedo direccionar desde el navbar haciendo un smooth scroll-->
+    <!-- Aqui inserto el componente carousel de bootstrap según los requisitos-->
     <header id="inicio">
       <section id="slider" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
@@ -80,6 +84,8 @@
 
 
     <!-- Sección Quienes Somos -->
+    <!-- En esta sección incluyo las clases d-none y d-md-block para que en tamaño movil no se vea la seccion "Quienes somos"-->
+    <!-- También aparecen tooltip para cada div con icono -->
     <section class="d-none d-md-block container py-5" id="quienes">
     <h5 class="pb-3 text-center">¿Quiénes somos?</h5>
     <div class="divider"></div>
@@ -115,6 +121,7 @@
     </section>
 
     <!-- Sección Destacados -->
+    <!-- En esta sección en medida movil se ve 1 card, medio tamaño 2 cards y en tamaños grandes 4 cards -->
     <section class="container py-5" id="destacados">
       <h5 class="pb-3 text-center">Destacados</h5>
       <div class="divider"></div>
@@ -165,6 +172,7 @@
     </section>
 
     <!-- Sección Contacto typeform -->
+    <!-- Importo el código de la pagina typeform -->
     <section class="container py-5" id="contacto">
       <h5 class="pb-3 text-center">Contacto</h5>
       <div class="divider"></div>
@@ -173,6 +181,7 @@
   </main>
 
   <!-- Footer -->
+  <!-- Utilizo clases bootstrap de utilidad y una clse propia llamada footer para alinear el contenido -->
   <footer>
     <div class="text-white py-2 footer">
       <h5>VIAJES CHILE</h5>
