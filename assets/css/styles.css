@@ -1,0 +1,50 @@
+body * {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Roleway', sans-serif;
+    background: #000000;
+    color: #ffffff;
+}
+footer {
+    background-color: #1c93a9;
+}
+h5{
+    font-size: calc(20px + (25 - 20)*((100vw - 320px)/(1280-320)));
+}
+.logo{
+    font-size: calc(16px + (20 - 16)*((100vw - 320px)/(1280-320)));
+}
+.card-title{
+    font-size: calc(16px + (20 - 16)*((100vw - 320px)/(1280-320)));
+}
+.navbar{
+    background-color: transparent !important;
+}
+.divider {
+    height: 0;
+    margin: 0.5rem 0;
+    overflow: hidden;
+    border-top: 3px solid #1c93a9;
+}
+.who-icons{
+    background-color: #1c93a9;
+}
+.icons{
+    font-size: calc(20px + (24 - 20)*((100vw - 320px)/(1280-320)));  
+}
+.card-img{
+    height: 10rem;
+}
+.card-body{
+    background-color: #1c93a9;
+}
+.card-text{
+    font-weight: 100 !important;
+}
+.footer{
+    display: flex;
+    justify-content: space-around;
+}
